@@ -1,0 +1,142 @@
+body {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.info-bar{
+    width: 504px;
+    height: 65px;
+    margin : -35px auto;
+    vertical-align: middle;
+    color: gold;
+    background-color: brown;
+    border: none;
+}
+.info-bar .user-info{
+    float: right;
+    margin: auto;
+    height: inherit;
+}
+.info-bar .menu-options{
+    float: left;
+    margin: 5px 0 0 11px;;
+    height: inherit;
+}
+.info-bar .menu-options > button{
+    background-color: transparent;
+    border: none;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+}
+
+.info-bar div.lives{
+    text-align: center;
+    float: right;
+    padding: 5px;
+}
+
+.info-bar div.lives > img{
+    top: -5px;
+}
+
+.info-bar button.button-menu > img{
+    -webkit-animation:spin 4s linear;
+    -moz-animation:spin 4s linear;
+    animation:spin 4s linear;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.info-bar .score{
+    text-align: center;
+    float: left;
+    border: none;
+    border-right: 1px gold solid;
+    padding: 5px;
+}
+
+.score-counter{
+    height: auto;
+    /* width: 30px; */
+    margin: 16px auto;
+    font-size: 28px;
+}
+
+.life-counter{
+    height: auto;
+    width: 30px;
+    margin: 50% auto;
+    font-size: 28px;
+    vertical-align: text-top;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: brown;
+    margin: 20% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px; /* Could be more or less, depending on screen size */
+    color: gold;
+}
+
+/* The Close Button */
+.close {
+    color: gold;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+p.menu-option{
+    margin: 0 auto;
+    width: 100%;
+}
+.chares{
+    margin-top: 30px;
+    height: max-content;
+    align-items: baseline;
+    align-content: space-between;
+}
+.char-button{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    border:none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    background-color: transparent;
+}
+.char-button:focus{
+    outline: gold;
+    outline-style: groove;
+}
+.char{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    margin: 0;
+    display: inline-flex;
+}
